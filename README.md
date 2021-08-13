@@ -14,14 +14,14 @@ A simple working tree with Firecracker v0.24.5 binaries.
 You'll need 2 terminals to run a MicroVM using a socket.
 
 At the **first terminal**, run the following command:
-```console
+```shell
 rm -rf sockets/first-microvm.socket && bin/firecracker --api-sock sockets/first-microvm.socket
 ```
 
 At the **second terminal**:
 
 To set the guess kernel:
-```console
+```shell
 curl --unix-socket sockets/first-microvm.socket -i \
       -X PUT 'http://localhost/boot-source'   \
       -H 'Accept: application/json'           \
@@ -32,7 +32,7 @@ curl --unix-socket sockets/first-microvm.socket -i \
        }"
 ```
 To set the guess rootfs:
-```console
+```shell
 curl --unix-socket sockets/first-microvm.socket -i \
     -X PUT 'http://localhost/drives/rootfs' \
     -H 'Accept: application/json'           \
@@ -46,7 +46,7 @@ curl --unix-socket sockets/first-microvm.socket -i \
 ```
 
 Then, to start the MicroVM:
-```console
+```shell
 curl --unix-socket sockets/first-microvm.socket -i \
     -X PUT 'http://localhost/actions'       \
     -H  'Accept: application/json'          \

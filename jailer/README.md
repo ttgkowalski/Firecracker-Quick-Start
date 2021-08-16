@@ -1,3 +1,6 @@
+Firstly, create a group to run jailer with the gid=2000 and a user with the uid=2000.
+
+
 In the first terminal, run:
 ```shell
 sudo bin/jailer --id testvm \

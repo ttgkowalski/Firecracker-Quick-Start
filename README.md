@@ -15,16 +15,16 @@ You'll need 2 terminals to run a MicroVM using a socket.
 
 At the **first terminal**, run the following command:
 ```shell
-# ./socket.sh $NAME_OF_YOUR_MICROVM
-./socket.sh teste
+# bash socket.sh $NAME_OF_YOUR_MICROVM
+bash socket.sh teste
 ```
 
 At the **second terminal**:
 
 To set the guess kernel:
 ```shell
-# ./run.sh $NAME_OF_YOUR_MICROVM
-./run.sh teste
+# bash run.sh $NAME_OF_YOUR_MICROVM
+bash run.sh teste
 ```
 
 The default login and password is **root**.

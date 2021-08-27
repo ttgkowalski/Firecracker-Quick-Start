@@ -21,7 +21,7 @@ bash socket.sh teste
 
 At the **second terminal**:
 
-To set the guess kernel:
+To run your vm:
 ```shell
 # bash run.sh $NAME_OF_YOUR_MICROVM
 bash run.sh teste

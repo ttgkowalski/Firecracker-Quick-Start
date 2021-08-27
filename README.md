@@ -16,7 +16,7 @@ You'll need 2 terminals to run a MicroVM using a socket.
 At the **first terminal**, run the following command:
 ```shell
 # bash socket.sh $NAME_OF_YOUR_MICROVM
-bash socket.sh teste
+bash scripts/socket.sh teste
 ```
 
 At the **second terminal**:
@@ -24,7 +24,7 @@ At the **second terminal**:
 To run your vm:
 ```shell
 # bash run.sh $NAME_OF_YOUR_MICROVM
-bash run.sh teste
+bash scripts/run.sh teste
 ```
 
 The default login and password is **root**.

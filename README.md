@@ -22,11 +22,14 @@ At the **second terminal**:
 
 To set the guess kernel:
 ```shell
-curl --unix-socket sockets/first-microvm.socket -i \ 
-      -X PUT 'http://localhost/boot-source' \ 
-      -H 'Accept: application/json' \ 
-      -H 'Content-Type: application/json' \ 
-      -d "{\"kernel_image_path\": \"$(pwd)/images/hello/vmlinux.bin\", \"boot_args\": \"console=ttyS0 reboot=k panic=1 pci=off\"}"
+curl --unix-socket ../../sockets/firecracker.socket -i \
+      -X PUT 'http://localhost/boot-source'   \
+      -H 'Accept: application/json'           \
+      -H 'Content-Type: application/json'     \
+      -d "{
+            \"kernel_image_path\": \"$(pwd)/vmlinux.bin\",
+            \"boot_args\": \"console=ttyS0 reboot=k panic=1 pci=off\"
+       }"
 ```
 To set the guess rootfs:
 ```shell

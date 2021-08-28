@@ -6,7 +6,7 @@ curl --unix-socket sockets/$1.socket -i \
       -H 'Accept: application/json'           \
       -H 'Content-Type: application/json'     \
       -d "{
-            \"kernel_image_path\": \"$(pwd)/kernels/vmlinuz-5.4.43-fc.x86_64\",
+            \"kernel_image_path\": \"$(pwd)/kernels/vmlinuz-4.15.0-fc.x86_64\",
             \"boot_args\": \"console=ttyS0 reboot=k panic=1 pci=off\"
        }"
 
@@ -17,7 +17,7 @@ curl --unix-socket sockets/$1.socket -i \
     -H 'Content-Type: application/json'     \
     -d "{
         \"drive_id\": \"rootfs\",
-        \"path_on_host\": \"$(pwd)/images/hello/rootfs.ext4\",
+        \"path_on_host\": \"$(pwd)/images/python-3_9_alpine/rootfs.ext4\",
         \"is_root_device\": true,
         \"is_read_only\": false
     }"

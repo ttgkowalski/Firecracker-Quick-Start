@@ -2,8 +2,6 @@
 
 # This shellscript must be inside VM
 
-network_auto_setup.sh
-
 IP_ADDR=10.0.0.2/24
 ip addr add $IP_ADDR dev eth0
 

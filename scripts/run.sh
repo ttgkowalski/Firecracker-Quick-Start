@@ -6,7 +6,7 @@ curl --unix-socket sockets/$1.socket -i \
       -H 'Accept: application/json'           \
       -H 'Content-Type: application/json'     \
       -d "{
-            \"kernel_image_path\": \"$(pwd)/images/hello/vmlinux.bin\",
+            \"kernel_image_path\": \"$(pwd)/kernels/vmlinuz-5.4.43-fc.x86_64\",
             \"boot_args\": \"console=ttyS0 reboot=k panic=1 pci=off\"
        }"
 

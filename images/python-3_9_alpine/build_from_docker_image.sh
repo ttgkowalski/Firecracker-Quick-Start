@@ -18,4 +18,5 @@ docker run -it --rm --network bridge -v $(pwd)/rootfs:/rootfs python:3.9-alpine3
 sudo umount $(pwd)/rootfs
 
 sudo rm -rf $(pwd)/rootfs
+resize2fs -M rootfs.ext4
 

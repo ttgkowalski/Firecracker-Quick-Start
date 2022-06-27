@@ -11,7 +11,11 @@ sudo mount $(pwd)/rootfs.ext4 $(pwd)/rootfs
 sudo mkdir -pv $(pwd)/rootfs/root
 
 sudo cp $(pwd)/image_setup.sh $(pwd)/rootfs/root/image_setup.sh
-sudo cp $(pwd)/up_network.sh $(pwd)/rootfs/root/up_network.sh
+
+chmod +x startup_scripts/*
+
+sudo mkdir -pv rootfs/etc/local.d/
+sudo cp startup_scripts/network-interface-startup.sh rootfs/etc/local.d/network-interface-startup.start
 
 docker run -it --rm --network bridge -v $(pwd)/rootfs:/rootfs python:3.9-alpine3.14 sh /rootfs/root/image_setup.sh
 

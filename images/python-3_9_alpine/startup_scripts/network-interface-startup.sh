@@ -1,3 +1,4 @@
+#!/bin/sh
 ip route flush dev eth0
 
 ip addr add 10.0.0.3/24 dev eth0

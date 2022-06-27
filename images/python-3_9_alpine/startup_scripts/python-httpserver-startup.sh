@@ -1,2 +1,2 @@
 #!/bin/sh
-cd /root/ && python3 -m http.server
+cd /root/ && python3 -m http.server &

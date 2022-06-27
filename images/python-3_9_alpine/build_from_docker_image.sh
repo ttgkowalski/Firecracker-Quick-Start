@@ -16,11 +16,16 @@ chmod +x startup_scripts/*
 
 sudo mkdir -pv rootfs/etc/local.d/
 sudo cp startup_scripts/network-interface-startup.sh rootfs/etc/local.d/network-interface-startup.start
+sudo cp startup_scripts/python-httpserver-startup.sh rootfs/etc/local.d/python-httpserver-startup.sh.start
 
 docker run -it --rm --network bridge -v $(pwd)/rootfs:/rootfs python:3.9-alpine3.14 sh /rootfs/root/image_setup.sh
+sudo rm rootfs/root/image_setup.sh
 
 sudo umount $(pwd)/rootfs
 
 sudo rm -rf $(pwd)/rootfs
+
+e2fsck -f rootfs.ext4
 resize2fs -M rootfs.ext4
+du -sh rootfs.ext4
 

@@ -1,0 +1,216 @@
+2022-06-26T23:34:57.724109279 [anonymous-instance:main:WARN:src/vmm/src/builder.rs:599] Could not add serial input event to epoll: Error during epoll call: Operation not permitted (os error 1)
+[    0.000000] Linux version 4.15.0 (dhr@u408d5cb7e82359d64def) (gcc version 6.5.0 20181026 (Ubuntu 6.5.0-2ubuntu1~16.04)) #2 SMP Thu Dec 6 10:55:30 GMT 2018
+[    0.000000] Command line: console=ttyS0 reboot=k panic=1 pci=off root=/dev/vda rw virtio_mmio.device=4K@0xd0000000:5 virtio_mmio.device=4K@0xd0001000:6
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x010: 'MPX CSR'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[    0.000000] x86/fpu: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[    0.000000] x86/fpu: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+[    0.000000] e820: BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x0000000007ffffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] DMI not present or invalid.
+[    0.000000] Hypervisor detected: KVM
+[    0.000000] e820: last_pfn = 0x8000 max_arch_pfn = 0x400000000
+[    0.000000] MTRR: Disabled
+[    0.000000] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+[    0.000000] CPU MTRRs all blank - virtualized system.
+[    0.000000] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+[    0.000000] found SMP MP-table at [mem 0x0009fc00-0x0009fc0f] mapped at [        (ptrval)]
+[    0.000000] Scanning 1 areas for low memory corruption
+[    0.000000] Using GB pages for direct mapping
+[    0.000000] No NUMA configuration found
+[    0.000000] Faking a node at [mem 0x0000000000000000-0x0000000007ffffff]
+[    0.000000] NODE_DATA(0) allocated [mem 0x07fde000-0x07ffffff]
+[    0.000000] kvm-clock: cpu 0, msr 0:7fdb001, primary cpu clock
+[    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+[    0.000000] kvm-clock: using sched offset of 36354998 cycles
+[    0.000000] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+[    0.000000] Zone ranges:
+[    0.000000]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.000000]   DMA32    [mem 0x0000000001000000-0x0000000007ffffff]
+[    0.000000]   Normal   empty
+[    0.000000] Movable zone start for each node
+[    0.000000] Early memory node ranges
+[    0.000000]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+[    0.000000]   node   0: [mem 0x0000000000100000-0x0000000007ffffff]
+[    0.000000] Initmem setup node 0 [mem 0x0000000000001000-0x0000000007ffffff]
+[    0.000000] Reserved but unavailable: 98 pages
+[    0.000000] Intel MultiProcessor Specification v1.4
+[    0.000000] MPTABLE: OEM ID: FC      
+[    0.000000] MPTABLE: Product ID: 000000000000
+[    0.000000] MPTABLE: APIC at: 0xFEE00000
+[    0.000000] Processor #0 (Bootup-CPU)
+[    0.000000] IOAPIC[0]: apic_id 2, version 17, address 0xfec00000, GSI 0-23
+[    0.000000] Processors: 1
+[    0.000000] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+[    0.000000] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.000000] PM: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+[    0.000000] e820: [mem 0x08000000-0xffffffff] available for PCI devices
+[    0.000000] Booting paravirtualized kernel on KVM
+[    0.000000] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.000000] random: fast init done
+[    0.000000] setup_percpu: NR_CPUS:128 nr_cpumask_bits:128 nr_cpu_ids:1 nr_node_ids:1
+[    0.000000] percpu: Embedded 42 pages/cpu @        (ptrval) s135168 r8192 d28672 u2097152
+[    0.000000] KVM setup async PF for cpu 0
+[    0.000000] kvm-stealtime: cpu 0, msr 7c15040
+[    0.000000] PV qspinlock hash table entries: 256 (order: 0, 4096 bytes)
+[    0.000000] Built 1 zonelists, mobility grouping on.  Total pages: 32137
+[    0.000000] Policy zone: DMA32
+[    0.000000] Kernel command line: console=ttyS0 reboot=k panic=1 pci=off root=/dev/vda rw virtio_mmio.device=4K@0xd0000000:5 virtio_mmio.device=4K@0xd0001000:6
+[    0.000000] Memory: 110972K/130680K available (8204K kernel code, 645K rwdata, 1572K rodata, 1332K init, 2820K bss, 19708K reserved, 0K cma-reserved)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] Kernel/User page tables isolation: enabled
+[    0.004000] Hierarchical RCU implementation.
+[    0.004000] 	RCU restricting CPUs from NR_CPUS=128 to nr_cpu_ids=1.
+[    0.004000] RCU: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+[    0.004000] NR_IRQS: 4352, nr_irqs: 48, preallocated irqs: 16
+[    0.004000] Console: colour dummy device 80x25
+[    0.004000] console [ttyS0] enabled
+[    0.004000] APIC: Switch to symmetric I/O mode setup
+[    0.004000] x2apic enabled
+[    0.004000] Switched APIC routing to physical x2apic.
+[    0.004000] ..TIMER: vector=0x30 apic1=0 pin1=0 apic2=-1 pin2=-1
+[    0.004000] tsc: Detected 1800.003 MHz processor
+[    0.004000] Calibrating delay loop (skipped) preset value.. 3600.00 BogoMIPS (lpj=7200012)
+[    0.004020] pid_max: default: 32768 minimum: 301
+[    0.004564] Security Framework initialized
+[    0.004970] SELinux:  Initializing.
+[    0.005445] Dentry cache hash table entries: 16384 (order: 5, 131072 bytes)
+[    0.006169] Inode-cache hash table entries: 8192 (order: 4, 65536 bytes)
+[    0.006842] Mount-cache hash table entries: 512 (order: 0, 4096 bytes)
+[    0.008010] Mountpoint-cache hash table entries: 512 (order: 0, 4096 bytes)
+[    0.009133] CPU: Physical Processor ID: 0
+[    0.009638] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.010597] Last level iTLB entries: 4KB 64, 2MB 8, 4MB 8
+[    0.011277] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[    0.012034] Spectre V2 mitigation: Mitigation: Full generic retpoline
+[    0.012815] Spectre V2 mitigation: Filling RSB on context switch
+[    0.026818] Freeing SMP alternatives memory: 28K
+[    0.028584] smpboot: CPU0: Intel(R) Xeon(R) Processor @ 1.60GHz (family: 0x6, model: 0x8e, stepping: 0xc)
+[    0.029853] Performance Events: unsupported p6 CPU model 142 no PMU driver, software events only.
+[    0.031026] Hierarchical SRCU implementation.
+[    0.032000] smp: Bringing up secondary CPUs ...
+[    0.032005] smp: Brought up 1 node, 1 CPU
+[    0.032509] smpboot: Max logical packages: 1
+[    0.032976] smpboot: Total of 1 processors activated (3600.00 BogoMIPS)
+[    0.033971] devtmpfs: initialized
+[    0.034367] x86/mm: Memory block size: 128MB
+[    0.035098] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.036018] futex hash table entries: 256 (order: 2, 16384 bytes)
+[    0.037041] NET: Registered protocol family 16
+[    0.037583] audit: initializing netlink subsys (disabled)
+[    0.038262] cpuidle: using governor ladder
+[    0.038656] cpuidle: using governor menu
+[    0.040027] audit: type=2000 audit(1656297297.775:1): state=initialized audit_enabled=0 res=1
+[    0.044441] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.045183] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.046179] SCSI subsystem initialized
+[    0.046562] dmi: Firmware registration failed.
+[    0.047059] NetLabel: Initializing
+[    0.047375] NetLabel:  domain hash size = 128
+[    0.047773] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.048032] NetLabel:  unlabeled traffic allowed by default
+[    0.048863] clocksource: Switched to clocksource kvm-clock
+[    0.049419] VFS: Disk quotas dquot_6.6.0
+[    0.049850] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.053108] NET: Registered protocol family 2
+[    0.053824] TCP established hash table entries: 1024 (order: 1, 8192 bytes)
+[    0.054713] TCP bind hash table entries: 1024 (order: 2, 16384 bytes)
+[    0.055553] TCP: Hash tables configured (established 1024 bind 1024)
+[    0.056408] UDP hash table entries: 256 (order: 1, 8192 bytes)
+[    0.057169] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+[    0.058010] NET: Registered protocol family 1
+[    0.059319] virtio-mmio: Registering device virtio-mmio.0 at 0xd0000000-0xd0000fff, IRQ 5.
+[    0.060422] virtio-mmio: Registering device virtio-mmio.1 at 0xd0001000-0xd0001fff, IRQ 6.
+[    0.061442] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.062632] Scanning for low memory corruption every 60 seconds
+[    0.063678] Initialise system trusted keyrings
+[    0.064268] Key type blacklist registered
+[    0.065077] workingset: timestamp_bits=36 max_order=15 bucket_order=0
+[    0.067040] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.070305] Key type asymmetric registered
+[    0.070726] Asymmetric key parser 'x509' registered
+[    0.071236] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
+[    0.071991] io scheduler noop registered (default)
+[    0.072540] io scheduler cfq registered
+[    0.072990] virtio-mmio virtio-mmio.0: Failed to enable 64-bit or 32-bit DMA.  Trying to continue, but this might not work.
+[    0.074089] virtio-mmio virtio-mmio.1: Failed to enable 64-bit or 32-bit DMA.  Trying to continue, but this might not work.
+[    0.075354] Serial: 8250/16550 driver, 1 ports, IRQ sharing disabled
+[    0.097089] serial8250: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a U6_16550A
+[    0.099418] loop: module loaded
+[    0.100507] Loading iSCSI transport class v2.0-870.
+[    0.101118] iscsi: registered transport (tcp)
+[    0.101551] tun: Universal TUN/TAP device driver, 1.6
+2022-06-26T23:34:57.901031265 [anonymous-instance:fc_vcpu 0:WARN:src/devices/src/legacy/i8042.rs:126] Failed to trigger i8042 kbd interrupt (disabled by guest OS)
+[    0.108788] i8042: Failed to disable AUX port, but continuing anyway... Is this a SiS?
+[    0.109515] i8042: If AUX port is really absent please use the 'i8042.noaux' option
+2022-06-26T23:34:57.908592165 [anonymous-instance:fc_vcpu 0:WARN:src/devices/src/legacy/i8042.rs:126] Failed to trigger i8042 kbd interrupt (disabled by guest OS)
+[    0.384294] serio: i8042 KBD port at 0x60,0x64 irq 1
+[    0.385102] hidraw: raw HID events driver (C) Jiri Kosina
+[    0.385826] nf_conntrack version 0.5.0 (1024 buckets, 4096 max)
+[    0.386671] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    0.387371] Initializing XFRM netlink socket
+[    0.387991] NET: Registered protocol family 10
+[    0.389117] Segment Routing with IPv6
+[    0.389621] NET: Registered protocol family 17
+[    0.390224] Bridge firewalling registered
+[    0.390786] sched_clock: Marking stable (388544681, 0)->(458506547, -69961866)
+[    0.391847] registered taskstats version 1
+[    0.392386] Loading compiled-in X.509 certificates
+[    0.393687] Loaded X.509 cert 'Build time autogenerated kernel key: 832b984664a2ac30485f3b34668e23593cc7d56b'
+[    0.394943] zswap: default zpool zbud not available
+[    0.395547] zswap: pool creation failed
+[    0.396177] Key type encrypted registered
+[    0.896301] input: AT Raw Set 2 keyboard as /devices/platform/i8042/serio0/input/input0
+[    0.897687] EXT4-fs (vda): couldn't mount as ext3 due to feature incompatibilities
+[    0.899549] EXT4-fs (vda): mounted filesystem with ordered data mode. Opts: (null)
+[    0.900631] VFS: Mounted root (ext4 filesystem) on device 254:0.
+[    0.901975] devtmpfs: mounted
+[    0.905014] Freeing unused kernel memory: 1332K
+[    0.905719] Write protecting the kernel read-only data: 12288k
+[    0.908261] Freeing unused kernel memory: 2016K
+[    0.911224] Freeing unused kernel memory: 476K
+
+   OpenRC 0.43.3.9014cd1346 is starting up Linux 4.15.0 (x86_64)
+
+ * You have cruft in /proc that should be deleted
+ * Mounting /proc ... [ ok ]
+[    1.088851] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x19f22c73312, max_idle_ns: 440795259572 ns
+ * Mounting /run ... * /run/openrc: creating directory
+ * /run/lock: creating directory
+ * /run/lock: correcting owner
+Service `hwdrivers' needs non existent service `dev'
+Service `machine-id' needs non existent service `dev'
+ * Caching service dependencies ... [ ok ]
+ * Remounting devtmpfs on /dev ... [ ok ]
+ * Mounting /dev/mqueue ... [ ok ]
+ * Mounting /dev/pts ... [ ok ]
+ * Mounting /dev/shm ... [ ok ]
+ * Loading modules ...modprobe: can't change directory to '/lib/modules': No such file or directory
+modprobe: can't change directory to '/lib/modules': No such file or directory
+ [ ok ]
+ * Mounting misc binary format filesystem ... [ ok ]
+ * Mounting /sys ... [ ok ]
+ * Mounting security filesystem ... [ ok ]
+ * Mounting debug filesystem ... [ ok ]
+ * Mounting SELinux filesystem ... [ ok ]
+ * Mounting persistent storage (pstore) filesystem ... [ ok ]
+ * Starting local ... [ ok ]
+
+Welcome to Alpine Linux 3.14
+Kernel 4.15.0 on an x86_64 (ttyS0)
+
+(none) login:  * Stopping local ... [ ok ]
+The system is going down NOW!
+Sent SIGTERM to all processes
+Sent SIGKILL to all processes
+Requesting system reboot
+[   40.242790] Unregister pv shared memory for cpu 0
+[   40.243743] reboot: Restarting system
+[   40.244328] reboot: machine restart

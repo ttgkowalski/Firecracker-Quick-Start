@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories
 apk update
 apk upgrade
@@ -27,6 +26,6 @@ rc-update add procfs boot
 rc-update add sysfs boot
 
 # Copy the container rootfs to /my-rootfs
-rsync -av --progress /* /my-rootfs --exclude /my-rootfs
+rsync -av --progress /* /rootfs --exclude /rootfs
 
 exit

@@ -31,8 +31,7 @@ curl --unix-socket sockets/$1.socket -i \
   -H 'Content-Type: application/json' \
   -d '{
       "iface_id": "eth0",
-      "guest_mac": "AA:FC:00:00:00:01",
-      "host_dev_name": "tapvm1"
+      "host_dev_name": "tap0"
     }'
 
 # START

@@ -26,7 +26,7 @@ rc-update add procfs boot
 rc-update add sysfs boot
 rc-update add local default
 
-# Copy the container rootfs to /my-rootfs
+# Copy the container rootfs to /my-rootfs( Which is mounted by docker, it will be our final version to run in Firecracker )
 rsync -av --progress /* /rootfs --exclude /rootfs
 
 exit
